@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #030303 !important;
+  color: #fff !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.contato-button {
+  background: rgba(0, 0, 0, 0.2);
+  border: 0px;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
+  max-width: 280px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contato-button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
 }
